@@ -1,0 +1,21 @@
+# Python artifacts
+  __pycache__/
+  *.py[cod]
+  *.pyo
+  *.pyd
+  *.egg-info/
+  dist/
+  build/
+
+  # Virtual environments & tooling
+  .venv/
+  .env/
+  .uv-cache/
+  .pytest_cache/
+  .ruff_cache/
+
+  # Editor / OS files
+  .DS_Store
+  .vscode/
+  .idea/
+  *.swp# Docker_Learning-
