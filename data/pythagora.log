@@ -1,0 +1,36 @@
+2025-09-24T15:01:34.026Z INFO SharedStateManager initialized
+2025-09-24T15:01:34.026Z INFO [Migration] Checking for database migration...
+2025-09-24T15:01:34.273Z INFO [Migration] No migration needed
+2025-09-24T15:01:34.273Z INFO [MainProvider] Creating new MainProvider instance...
+2025-09-24T15:01:34.274Z INFO [/Users/momodou/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6] Project root:
+2025-09-24T15:01:34.274Z INFO [/Users/momodou/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/prisma/schema.prisma] Schema path:
+2025-09-24T15:01:34.274Z INFO [file:/Users/momodou/Documents/projects/pythagora_setup/pythagora-core/data/database/pythagora.db] Database URL:
+2025-09-24T15:01:34.274Z INFO [true] Schema exists:
+2025-09-24T15:01:34.274Z INFO Running prisma generate first...
+2025-09-24T15:01:35.410Z INFO [Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (6.16.2) to ./src/generated/prisma in 189ms
+
+] Prisma generate result:
+2025-09-24T15:01:35.410Z INFO Running prisma db push to sync schema...
+2025-09-24T15:01:36.456Z INFO [Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "pythagora.db" at "file:/Users/momodou/Documents/projects/pythagora_setup/pythagora-core/data/database/pythagora.db"
+
+The database is already in sync with the Prisma schema.
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (6.16.2) to ./src/generated/prisma in 99ms
+
+] Prisma db push result:
+2025-09-24T15:01:36.457Z INFO Is remote: false
+2025-09-24T15:01:36.458Z INFO Starting Local. Installation path: /Users/momodou/Documents/projects/pythagora_setup
+2025-09-24T15:04:46.791Z INFO MainProvider handleMessage {"type":"codeScreenActivated","activeScreen":"code","reason":"file_opened","route":"forwardToLeft","source":"tabsManager"}
+2025-09-24T15:04:47.284Z INFO MainProvider handleMessage {"command":"centerBarReady","data":{},"source":"center"}
+2025-09-24T15:04:47.284Z INFO Center panel message: {"command":"centerBarReady","data":{},"source":"center"}
+2025-09-24T15:04:47.284Z INFO MainProvider handleMessage {"command":"ready","data":"ready","source":"center"}
+2025-09-24T15:04:47.284Z INFO Center panel message: {"command":"ready","data":"ready","source":"center"}
+2025-09-24T15:04:47.284Z INFO [MainProvider] Center panel ready - processing ready handler
+2025-09-24T15:04:47.284Z INFO [MainProvider] Center panel ready - flushing 0 buffered messages
+2025-09-24T15:04:47.284Z INFO [Message Router] Routing getProjectInfo through unified router
+2025-09-24T15:04:55.046Z INFO MainProvider: Center panel disposed
