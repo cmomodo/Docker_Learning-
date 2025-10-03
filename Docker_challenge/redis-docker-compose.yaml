@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  flask-app:
+    build: .
+    container_name: flask-app
+    ports:
+      - "5001:5001"
+    #This are the environment variables for the application
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+    networks:
+      - redis-network
+    volumes:
+      - flask-data:/data
+
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - redis-data:/data
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - redis-network
+
+networks:
+  redis-network:
+    driver: bridge
+
+volumes:
+  flask-data:
+  redis-data:
