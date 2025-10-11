@@ -3,9 +3,8 @@ version: "3.8"
 services:
   flask-app:
     build: .
-    container_name: flask-app
     ports:
-      - "5001:5001"
+      - "5001-5010:5001"
     #This are the environment variables for the application
     environment:
       - REDIS_HOST=redis
