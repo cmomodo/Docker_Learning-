@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderCo Containers Session</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/stats">Stats</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h1>🐳 CoderCo Containers Session</h1>
+            <p class="subtitle">Welcome to our Docker & Redis powered application!</p>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>📊 Counter</h3>
+                    <p>Track visits and interactions with our Redis-powered counter system.</p>
+                    <a href="/count" class="btn">View Counter</a>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔄 Reset</h3>
+                    <p>Reset the counter back to zero whenever you need a fresh start.</p>
+                    <a href="/reset" class="btn">Reset Counter</a>
+                </div>
+
+                <div class="feature-card">
+                    <h3>💚 Health</h3>
+                    <p>Check the health status of our services and Redis connection.</p>
+                    <a href="/health" class="btn">Check Health</a>
+                </div>
+            </div>
+
+            <h2>📈 Available Endpoints</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h4>GET /count</h4>
+                    <p>Increment counter</p>
+                </div>
+                <div class="stat-box">
+                    <h4>GET /reset</h4>
+                    <p>Reset counter</p>
+                </div>
+                <div class="stat-box">
+                    <h4>GET /health</h4>
+                    <p>Health check</p>
+                </div>
+                <div class="stat-box">
+                    <h4>POST /store</h4>
+                    <p>Store key-value</p>
+                </div>
+                <div class="stat-box">
+                    <h4>GET /retrieve/&lt;key&gt;</h4>
+                    <p>Get value by key</p>
+                </div>
+                <div class="stat-box">
+                    <h4>GET /stats</h4>
+                    <p>Redis statistics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CoderCo Containers Session | Built with Flask, Redis & Docker</p>
+    </footer>
+</body>
+</html>

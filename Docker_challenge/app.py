@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import redis
 import os
 import time
@@ -21,7 +21,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'CoderCo Containers Session!'
+    return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 @app.route('/count')
 def count():
@@ -46,7 +50,7 @@ def store_value():
     data = request.get_json()
     if not data or 'key' not in data or 'value' not in data:
         return jsonify({'error': 'Missing key or value'}), 400
-    
+
     r.set(data['key'], data['value'])
     return jsonify({'status': 'success'})
 
@@ -61,7 +65,7 @@ def retrieve_value(key):
 def stats():
     if not r:
         return jsonify({'error': 'Redis not connected'}), 500
-    
+
     info = r.info()
     return jsonify({
         'uptime_in_seconds': info.get('uptime_in_seconds'),

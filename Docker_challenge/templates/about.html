@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CoderCo Containers Session</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/stats">Stats</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="about-content">
+            <h1>About This Project</h1>
+            <p class="subtitle">A modern containerized web application demonstrating Docker best practices</p>
+
+            <h2>🎯 Project Overview</h2>
+            <p>
+                This project is a <span class="highlight">Flask-based web application</span> that showcases the power of
+                containerization using Docker. It demonstrates how to build scalable, production-ready applications
+                with multiple services working together seamlessly.
+            </p>
+
+            <h2>🏗️ Architecture</h2>
+            <p>
+                The application uses a <span class="highlight">microservices architecture</span> with the following components:
+            </p>
+            <ul style="color: #555; font-size: 1.1rem; line-height: 2; margin-left: 2rem;">
+                <li><strong>Flask Application:</strong> Multiple instances running behind a load balancer</li>
+                <li><strong>Redis:</strong> In-memory data store for fast caching and data persistence</li>
+                <li><strong>Nginx:</strong> Load balancer distributing traffic across Flask instances</li>
+                <li><strong>Docker Compose:</strong> Orchestrating all services together</li>
+            </ul>
+
+            <h2>🔧 Technology Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">🐍 Python</span>
+                <span class="tech-tag">🌶️ Flask</span>
+                <span class="tech-tag">🐳 Docker</span>
+                <span class="tech-tag">📦 Docker Compose</span>
+                <span class="tech-tag">🗄️ Redis</span>
+                <span class="tech-tag">⚡ Nginx</span>
+                <span class="tech-tag">🎨 CSS3</span>
+                <span class="tech-tag">📦 UV Package Manager</span>
+            </div>
+
+            <h2>✨ Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🔄 Load Balancing</h3>
+                    <p>Multiple Flask instances balanced by Nginx for high availability and performance.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>💾 Data Persistence</h3>
+                    <p>Redis volumes ensure data persists even when containers are restarted.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📊 Real-time Stats</h3>
+                    <p>Monitor Redis performance and connection statistics in real-time.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🏥 Health Checks</h3>
+                    <p>Built-in health monitoring for all services to ensure reliability.</p>
+                </div>
+            </div>
+
+            <h2>🚀 Key Accomplishments</h2>
+            <p>
+                Throughout this project, we've implemented several Docker best practices:
+            </p>
+            <ul style="color: #555; font-size: 1.1rem; line-height: 2; margin-left: 2rem;">
+                <li>✅ Multi-stage Docker builds for optimized image sizes</li>
+                <li>✅ Docker Compose for service orchestration</li>
+                <li>✅ Volume mounting for data persistence</li>
+                <li>✅ Multiple container instances with load balancing</li>
+                <li>✅ Health checks and monitoring endpoints</li>
+                <li>✅ Environment variable configuration</li>
+                <li>✅ Network isolation and service discovery</li>
+            </ul>
+
+            <h2>🎓 Learning Outcomes</h2>
+            <p>
+                This project serves as a comprehensive learning experience for:
+            </p>
+            <ul style="color: #555; font-size: 1.1rem; line-height: 2; margin-left: 2rem; margin-bottom: 2rem;">
+                <li>Understanding containerization concepts</li>
+                <li>Building production-ready Docker applications</li>
+                <li>Implementing microservices architecture</li>
+                <li>Working with Redis for caching and data storage</li>
+                <li>Configuring Nginx as a reverse proxy and load balancer</li>
+                <li>Managing multi-container applications with Docker Compose</li>
+            </ul>
+
+            <a href="/" class="btn">Back to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CoderCo Containers Session | Built with Flask, Redis & Docker</p>
+    </footer>
+</body>
+</html>

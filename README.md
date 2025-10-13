@@ -51,3 +51,7 @@ To stop and remove the containers, networks, and volumes created by `docker-comp
 ```bash
 docker-compose down
 ```
+## The docker challenge:
+This was the docker challenge , it shows how we use docker not only to deploy applications but also to manage them. we made the website stylish and responsive using docker-compose.
+
+It follows the same principles as the docker challenge principles.
