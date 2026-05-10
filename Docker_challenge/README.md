@@ -1,16 +1,19 @@
-CoderCo Containers Challenge
-Building a Multi-Container Application
+# CoderCo Containers Challenge
+## Building a Multi-Container Application
 
-Objective
-Create a multi-container application that consists of a simple Python Flask web application and a Redis database. The Flask application should use Redis to store and retrieve data.
+## Objective
+Create a multi-container application that consists of a simple Python Flask web application and a Redis database. The Flask application should use Redis to store and retrieve data. The Application will have different paths.The paths show you different endpoints of the Flask application.
 
 Requirements
 Flask Web Application:
 
 A Flask app that has two routes:
 /: Displays a welcome message.
+![Home Page](images/home.png)
+
 /count: Increments and displays a visit count stored in Redis.
 Redis Database:
+![Count Page](images/count.png)
 
 Use Redis as a key-value store to keep track of the visit count.
 Dockerize Both Services:
@@ -19,10 +22,14 @@ Create Dockerfiles for both the Flask app and Redis.
 Use Docker Compose to manage the multi-container application.
 Test the Application
 Access the Welcome Page:
+![Home Page](images/about.png)
 
 Open your browser and go to http://localhost:5000 to see the welcome message. Test the Visit Count:
 
 Navigate to http://localhost:5000/count to see the visit count increment each time you refresh the page.
+
+Health Check: 
+![Health Check](images/health_endpoint.png)
 
 Bonus
 Persistent Storage for Redis: Configure Redis to use a volume to persist its data.
